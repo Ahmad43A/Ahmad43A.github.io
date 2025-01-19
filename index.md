@@ -8,7 +8,7 @@ Designed and implemented a security monitoring system using Microsoft's Azure Se
 
 
 
-<a href="https://github.com/Ahmad43A/Azure-Sentinel-Honeypo" target="_blank" style="text-decoration: none; padding: 10px 15px; background-color: #24292f; color: #ffffff; border-radius: 5px; display: inline-block; font-weight: bold;">View on GitHub</a>
+<a href="https://github.com/Ahmad43A/Azure-Sentinel-Honeypot" target="_blank" style="text-decoration: none; padding: 10px 15px; background-color: #24292f; color: #ffffff; border-radius: 5px; display: inline-block; font-weight: bold;">View on GitHub</a>
 
 
 ## About Me
