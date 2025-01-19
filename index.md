@@ -2,9 +2,7 @@
 layout: default
 ---
 
-This provides an overview of setting up and utilizing Azure Sentinel, a cloud-based (SIEM) system, in conjunction with a virtual honeypot. The goal is to monitor and analyze cyberattacks from various sources worldwide, gaining insights into malicious activities and enhancing cybersecurity defenses.
-
-## Overview of Azure Sentinel
+## Azure Sentinel Honeypot
 
 Azure Sentinel is a scalable, cloud-native SIEM solution that enables real-time threat detection and response. It integrates advanced analytics, machine learning, and AI capabilities to monitor security events and detect anomalies across a wide range of environments.
 
