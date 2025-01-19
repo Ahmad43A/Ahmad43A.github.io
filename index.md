@@ -12,14 +12,16 @@ I am a dedicated Information Security Analyst with expertise in SIEM technologie
 
 ## Technical Expertise
 
-### SIEM & Security Tools
+### Threat Detection Rules
+### Phishing Analysis
+### Incident Response
 
 # Primary Technologies
 - ELK Stack (Elasticsearch, Logstash, Kibana)
 - ArcSight SIEM
 - Wireshark Network Analysis
 - Network Miner
-- Barracuda Email Gateway
+- Barracuda ESG
   
 # Featured Project: Azure Sentinel Honeypot
 - Deployed vulnerable VM as honeypot
