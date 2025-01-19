@@ -1,62 +1,87 @@
 ---
 layout: default
 ---
-# Ahmed Ali
-**Information Security Analyst @ NCCPL**  
-Specializing in Security Operations Center (SOC) management and threat detection
 
-## Professional Profile
-I am a dedicated Information Security Analyst with expertise in SIEM technologies and network security monitoring. Currently serving at NCCPL's Security Operations Center, I focus on implementing robust security monitoring solutions and incident response procedures.
+This provides an overview of setting up and utilizing Azure Sentinel, a cloud-based (SIEM) system, in conjunction with a virtual honeypot. The goal is to monitor and analyze cyberattacks from various sources worldwide, gaining insights into malicious activities and enhancing cybersecurity defenses.
 
-> "Security is not just about prevention; it's about intelligent detection and swift response."
+## Overview of Azure Sentinel
 
-## Technical Expertise
+Azure Sentinel is a scalable, cloud-native SIEM solution that enables real-time threat detection and response. It integrates advanced analytics, machine learning, and AI capabilities to monitor security events and detect anomalies across a wide range of environments.
 
-### Threat Detection Rules
-### Phishing Analysis
-### Incident Response
+### Key Features:
 
-# Primary Technologies
-- ELK Stack (Elasticsearch, Logstash, Kibana)
-- ArcSight SIEM
-- Wireshark Network Analysis
-- Network Miner
-- Barracuda ESG
-  
-# Featured Project: Azure Sentinel Honeypot
-- Deployed vulnerable VM as honeypot
-- Implemented Azure Sentinel for monitoring
-- Created PowerShell scripts for geolocation tracking
-- Visualized global RDP attack patterns
-- used API to get the coordinates to map in sentinel.
-  
-## Project Outcome
-Successfully mapped and analyzed worldwide RDP attack patterns
-Developed real-time attack visualization dashboard
-Created comprehensive threat intelligence reports
-Implemented automated alert system for suspicious activities
+- Centralized log collection and analysis.
+- AI-powered threat detection.
+- Real-time dashboards and visualization tools.
+- Integration with Microsoft and third-party security solutions.
 
-# Certifications
--CompTIA  Security+ Certified
--CCD Certified
--Intro to Cybersecurity Cisco Certified
+## Purpose of the Virtual Honeypot
 
-# Areas of Expertise
+A virtual honeypot is a decoy system designed to attract cyber attackers. It appears as a vulnerable machine but is, in reality, closely monitored to capture information about attack methods, sources, and intentions.
+![Azure Sentinel Dashboard](github.png "Azure Sentinel honeypot")
 
-Security Information and Event Management (SIEM)
-Endpoint Security Monitoring
-Threat Detection & Analysis
-Email Security
+### Objectives:
 
-# Professional Experience
-<dl>
-<dt>Role</dt>
-<dd>Information Security Analyst</dd>
-<dt>Company</dt>
-<dd>NCCPL</dd>
-<dt>Specialization</dt>
-<dd>SOC Operations</dd>
-<dt>Key Tools</dt>
-<dd>ELK Stack, ArcSight, Wireshark</dd>
-</dl>
+- Identify and log attack attempts from various IP addresses.
+- Analyze the geographical distribution of attacks.
+- Gather insights into attack patterns and behaviors.
 
+## Setup Process
+
+### 1. Deploying Azure Sentinel
+
+#### Create an Azure Sentinel Instance:
+- Navigate to the Azure portal.
+- Select Azure Sentinel and associate it with a Log Analytics workspace.
+- Configure data connectors for log ingestion.
+
+#### Integrate Data Sources:
+- Connect data from Azure resources, on-premises systems, or third-party solutions.
+- Enable built-in connectors for Azure AD, Microsoft Defender, and other tools.
+
+#### Set Up Analytics and Alerts:
+- Create custom alert rules to detect specific threats.
+- Use built-in templates for common use cases.
+![Log Analytics Screenshot](sent1.png "sentinel")
+
+
+
+### 2. Configuring the Virtual Honeypot
+
+#### Create a Virtual Machine (VM):
+- Deploy a VM in Azure, ensuring it mimics a vulnerable system.
+- Install minimal security measures to make it appealing to attackers.
+
+#### Expose the Honeypot:
+- Open ports and services commonly targeted by attackers, such as SSH (port 22) or RDP (port 3389).
+- Deploy decoy applications to simulate real-world environments.
+
+#### Enable Logging:
+- Configure logging for system events, network activity, and user interactions.
+- Forward logs to Azure Sentinel for analysis.
+
+## Monitoring and Analysis
+
+### 1. Real-Time Attack Logging
+
+Azure Sentinel collects logs from the honeypot and aggregates them in the Log Analytics workspace.
+
+Commonly monitored data includes:
+- Source IP addresses of attackers.
+- Types of attacks (e.g., brute force, SQL injection).
+- Frequency and timing of attack attempts.
+
+### 2. Visualization and Reporting
+
+- Use Azure Sentinel’s dashboard to create interactive maps showing attack origins.
+- Generate detailed reports on attack trends, highlighting:
+  - Geographical distribution.
+  - Time-based activity patterns.
+  - Most targeted services and vulnerabilities.
+
+![Log Analytics Screenshot](sent2.png "visualization")
+
+
+## Conclusion
+
+By leveraging Azure Sentinel and a virtual honeypot, organizations can gain valuable insights into cyber threats, enhance their defensive strategies, and contribute to a broader understanding of global attack patterns. This proactive approach enables better preparation against potential security breaches, ensuring a more resilient cybersecurity posture.
