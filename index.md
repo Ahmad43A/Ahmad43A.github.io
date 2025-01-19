@@ -21,33 +21,32 @@ I am a dedicated Information Security Analyst with expertise in SIEM technologie
 - Network Miner
 - Barracuda Email Gateway
   
-Featured Project: Azure Sentinel Honeypot
+# Featured Project: Azure Sentinel Honeypot
 - Deployed vulnerable VM as honeypot
 - Implemented Azure Sentinel for monitoring
 - Created PowerShell scripts for geolocation tracking
 - Visualized global RDP attack patterns
 - used API to get the coordinates to map in sentinel.
   
-Project Outcome
-
+## Project Outcome
 Successfully mapped and analyzed worldwide RDP attack patterns
 Developed real-time attack visualization dashboard
 Created comprehensive threat intelligence reports
 Implemented automated alert system for suspicious activities
 
-Certifications
-CertificationIssuing OrganizationStatusSecurity+CompTIACertifiedCCDCiscoCertifiedIntro to CybersecurityCiscoCertified
+# Certifications
+-CompTIA  Security+ Certified
+-CCD Certified
+-Intro to Cybersecurity Cisco Certified
 
-Areas of Expertise
+# Areas of Expertise
 
 Security Information and Event Management (SIEM)
-Network Security Monitoring
-Incident Response
+Endpoint Security Monitoring
 Threat Detection & Analysis
-Email Security Management
-Security Tool Implementation
+Email Security
 
-Professional Experience
+# Professional Experience
 <dl>
 <dt>Role</dt>
 <dd>Information Security Analyst</dd>
