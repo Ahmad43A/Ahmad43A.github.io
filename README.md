@@ -14,7 +14,7 @@ A computer science student learning cybersecurity and a blue teamer
 
 I hold a certification in Security+ and currently learning for other certs too.
 
-In the online realm, I am recognized as Tron. My professional passion revolves around SOC, Threat Detection, Threat Hunting, DFIR with a specific focus on Blue/Purple teaming
+In the online realm, I am recognized as Macgyver. My professional passion revolves around SOC, Threat Detection, Threat Hunting, DFIR with a specific focus on Blue/Purple teaming
 
 I am  enthusiastic about Developing and scripting, particularly in the realm of automation. My belief is you have to have the understanding and learning of the things you are out there protecting to defend better. I am dedicated to remaining well-informed and up-to-date with the latest trends and advancements in the dynamic field of cybersecurity
 
